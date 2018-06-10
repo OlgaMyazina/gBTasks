@@ -34,4 +34,4 @@ function formatHour(hour) {
 const t1 = process.argv[2];
 const t2 = process.argv[3];
 
-console.log(formatSum(t1, t2));
+process.stdout.write(formatSum(t1, t2));
