@@ -12,14 +12,14 @@ function shift(strA, strB) {
   let count = strA.indexOf(strB);
   if (count !== -1) return count;
   for (let i = 0; i < strA.length; ++i) {
-    strA = shiftArray(strA);
+    strA = shiftString(strA);
     count = strA.indexOf(strB);
     if (count !== -1) return count + i + 1;
   }
   return -1;
 }
 
-function shiftArray(str) {
+function shiftString(str) {
   str = str.slice(1) + str.slice(0, 1);
   return str;
 }
